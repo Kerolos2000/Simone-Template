@@ -171,3 +171,14 @@ for (let i = 0; i < hidelayer.length; i++) {
     `;
   };
 }
+
+let icon = document.querySelector(".icon");
+let positionFixed = document.querySelector(".positionFixed");
+icon.onclick = () => {
+  positionFixed.style.transition = "0.5s"
+  if(positionFixed.classList.contains("hidden")){
+    positionFixed.classList.remove("hidden");
+  }else{
+    positionFixed.classList.add("hidden");
+  }
+}
